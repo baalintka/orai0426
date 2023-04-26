@@ -10,6 +10,15 @@ class Szemely {
         <p>${this.kor()}<p>
         `)
         this.#szemelyELEM=$(".szemely:last-child");
+        this.#szemelyELEM.on("click",function(){
+
+            console.log(this)
+        })
+        this.#szemelyELEM.on("click",()=>{
+
+            console.log(this)
+        })
+
     }
     getSzuletesinev(){
         return this.#szulNev;
