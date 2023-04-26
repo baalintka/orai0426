@@ -9,6 +9,7 @@ class Szemely {
         <h3>${this.#szulNev}</h3>
         <p>${this.kor()}<p>
         `)
+        this.#szemelyELEM=$(".szemely:last-child");
     }
     getSzuletesinev(){
         return this.#szulNev;
